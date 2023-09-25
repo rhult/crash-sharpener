@@ -44,12 +44,12 @@ The output should look something like this:
 
 ```
 Decorated stack trace. System.DivideByZeroException: Attempted to divide by zero.
-    at Crash.CrashingClass.TheCrash(Int32 a) in symbolicate/example/CrashingClass.cs:23 [9-42]
-    at Crash.CrashingClass.Is() in symbolicate/example/CrashingClass.cs:17 [9-22]
-    at Crash.CrashingClass.This() in symbolicate/example/CrashingClass.cs:12 [9-14]
-    at Crash.CrashingClass.CallThisToCrash() in symbolicate/example/CrashingClass.cs:7 [9-16]
-    at Program+<>c__DisplayClass0_0.<<Main>$>g__Main|0(String[] args) IL_0029 T_06000010
-    at Program.<Main>$(String[] args) IL_000e T_06000006
+    at Crash.CrashingClass.TheCrash(Int32 a) in example/CrashingClass.cs:23 [23:9-23:42]
+    at Crash.CrashingClass.Is() in example/CrashingClass.cs:17 [17:9-17:22]
+    at Crash.CrashingClass.This() in example/CrashingClass.cs:12 [12:9-12:14]
+    at Crash.CrashingClass.CallThisToCrash() in example/CrashingClass.cs:7 [7:9-7:16]
+    at Program.<<Main>$>g__Main|0_0(String[] args) IL_003c T_06000008
+    at Program.<Main>$(String[] args) IL_0001 T_06000006
 ```
 
 The original line will be shown if a symbol can't be resolved. The range in brackets represents the start and end column.
