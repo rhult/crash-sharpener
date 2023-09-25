@@ -117,7 +117,7 @@ public static class Symbolicator
 
     private static string GetSourceLocation(SequencePoint point)
     {
-        return $"{point.StartLine} [{point.StartColumn}-{point.EndColumn}]";
+        return $"{point.StartLine} [{point.StartLine}:{point.StartColumn}-{point.EndLine}:{point.EndColumn}]";
     }
 
     private static string? RemoveSymbolTail(string symbol)
