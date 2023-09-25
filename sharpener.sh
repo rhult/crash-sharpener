@@ -9,7 +9,7 @@
 
 usage()
 {
-  echo "Usage: $0 [-h] [-r] [-s path-component] symbols-dir stacktrace"
+  echo "Usage: $0 [-h] [-b] symbols-dir stacktrace"
   echo
   echo " -h    - Show this help"
   echo " -b    - force building the sharper-crashes tool"
@@ -31,7 +31,7 @@ usage()
 
 sharpener=sharpener/bin/Release/net7.0/sharpener
 
-while getopts :hbs: option
+while getopts :hb option
 do
     case ${option} in
         h) usage; exit 0;;
