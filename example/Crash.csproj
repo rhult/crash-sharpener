@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <LangVersion>11</LangVersion>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>Crash</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <DebugType>portable</DebugType>
+    <Configuration>Release</Configuration>
+  </PropertyGroup>
+
+
+</Project>
